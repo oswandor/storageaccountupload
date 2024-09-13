@@ -1,0 +1,85 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variables file
+.env
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Azure
+*.publishsettings
+*.azure
+*.azcopy
+*.azd
+*.azure-functions-core-tools
+*.cache
+*.dapr
+*.dotnet
+*.gradle
+*.ipython
+*.jdks
+*.kube
+*.lesshst
+*.librarymanager
+*.m2
+*.minikube
+*.nbi
+*.node_repl_history
+*.nuget
+*.promptflow
+*.redhat
+*.rest-client
+*.ssh
+*.sts4
+*.templateengine
+*.vs-kubernetes
+*.vscode
+AppData/
+Contacts/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+Links/
+Music/
+OneDrive/
+Pictures/
+Saved Games/
+Searches/
+Videos/
+.azcopy
+.azd
