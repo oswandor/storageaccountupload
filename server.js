@@ -23,11 +23,17 @@ const blobServiceClient = new BlobServiceClient(`${blobServiceUri}?${sasToken}`,
 const upload = multer({ dest: 'uploads/' });
 
 
-// Configura CORS para permitir solicitudes desde http://localhost:8081
-app.use(cors({
-  origin: 'http://localhost:8081'
-})); 
+const allowedOrigins = ['https://wapp-ucga3rgh4hnpy.azurewebsites.net', 'http://localhost:8081'];
 
+app.use(cors({
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
 
 app.use(express.static('public'));
 
